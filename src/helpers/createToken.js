@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 //jc-6
 module.exports = {
   createAccessToken: (data) => {
-    const key = "saitama";
+    const key = "saitamas";
     const token = jwt.sign(data, key, { expiresIn: "2h" });
     return token;
   },
